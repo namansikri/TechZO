@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --progress-width: 0%;
+    --background-blur: 0px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#aboutus p, #about p, #our-team p, #our-advantages p, .more-btn {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#about-us p {
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+#info {
+    height: 370px;
+    margin-top: 40px;
+}
+
+#about {
+    width: 80vw;
+    margin: 2rem auto;
+    background-image: url("https://www.mtekdigital.ca/wp-content/uploads/2018/09/web-bg02-1340x670.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #101820f0;
+}
+
+#projectheading {
+    text-shadow: 0px 0px 5px white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#info p {
+    width: 40%;
+    padding-top: 0px;
+    padding-left: 40px;
+    font-size: 1.2rem;
+    display: block;
+}
+
+#about h1 {
+    padding-top: 30px;
+}
+
+#our-team {
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#team-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.team {
+    width: 200px;
+    height: 350px;
+    margin: 40px;
+}
+
+.team img {
+    width: 200px;
+    height: 250px;
+}
+
+#our-advantages {
+    width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-advantages>h1 {
+    font-size: 2rem;
+}
+
+#advantages {
+    display: flex;
+    width: 90%;
+}
+
+#advantages img {
+    display: inline;
+    height: 100px;
+}
+
+.advantage {
+    text-align: center;
+    margin: 20px;
+    width: 25%;
+    margin-top: 60px;
+}
+
+.more-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    transition: all 300ms linear;
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    padding-left: 0.5rem;
+}
+
+/* Navbar Styling */
+
+header {
+    background-color: #101820f0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    height: 0.5rem;
+    width: var(--progress-width);
+    top: 100%;
+    left: 0;
+    background-color: red;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.left a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tagline {
+    text-align: center;
+    border-left: 3px solid white;
+    padding-left: 0.5rem;
+}
+
+.tag-ele {
+    transition: all 150ms linear;
+}
+
+.tagline:hover .tag-ele {
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+.left a .tagline p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.left a .tagline .small {
+    color: white;
+    font-size: 0.7rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.left a img {
+    max-width: 20%;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    position: relative;
+    transition: all 300ms linear;
+    font-size: 1rem;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: orangered;
+    transition: all 300ms linear;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    background-color: #F2AA4C;
+}
+
+nav ul li a:hover {
+    color: #F2AA4C;
+}
+
+#aboutus {
+    color: #F2AA4C;
+    pointer-events: none;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.right img {
+    max-height: 40px;
+    max-width: 40px;
+    filter: invert(1);
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.right img:hover {
+    filter: invert(0.8);
+}
+
+#search {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    outline: none;
+    width: 0%;
+    transition: all 300ms ease-in-out;
+}
+
+#search.animate {
+    width: 35%;
+}
+
+.enroll-btn {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #F2AA4C;
+    color: #F2AA4C;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.enroll-btn:hover {
+    background-color: #F2AA4C;
+    color: white;
+}
+
+.enroll-btn:active {
+    background-color: #E5890A;
+}
+
+.main-container {
+    transition: all 100ms ease-out;
+    filter: blur(var(--background-blur));
+}

@@ -1,0 +1,98 @@
+body {
+  background-color: #344a72;
+  font-family: "Roboto", sans-serif;
+  background-image: url(../images/SignUp_Background.jpg);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.signup-box {
+  width: 500px;
+  height: 710px;
+  margin-left: 60%;
+  margin-top: 20px;
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 450px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* form input { */
+
+.form input {
+  outline: 0;
+  border-radius: 10px;
+  background: #F2F2F2;
+  width: 100%;
+  border: 0;
+  margin: 6px 0 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.form input:hover {
+  background-color: #D3F8F9;
+  transition: all 1s ease 0s;
+}
+
+.form input:focus {
+  background-color: #D3F8F9;
+  transition: all 1s ease 0s;
+}
+
+#submit-btn {
+  width: 450px;
+  height: 44px;
+  margin: 10px 0;
+  border: none;
+  background-color: #1ADBE5;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#submit-btn:hover, #submit-btn:active, #submit-btn:focus {
+  background-color: #06C5CF;
+  transition: all 1s ease 0s;
+}
+
+p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.para-2 {
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+}
+
+.para-2 a {
+  color: #06C5CF;
+  text-decoration: none;
+}
+
+.para-2 a:hover {
+  color: #07b2bb;
+}

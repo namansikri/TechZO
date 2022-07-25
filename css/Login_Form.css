@@ -1,0 +1,102 @@
+/* BackOverlay styling */
+
+.back-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: all 100ms linear;
+}
+
+/*login form css*/
+
+#form {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  background: #FFFFFF;
+  opacity: 99%;
+  max-width: 20rem;
+  padding: 10px 45px 30px 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50vh;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  transition: all 250ms linear;
+}
+
+#form h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#form p {
+  font-size: 1rem;
+  padding: 1px;
+  text-align: center;
+}
+
+#form input {
+  outline: 0;
+  border-radius: 10px;
+  background: #F2F2F2;
+  width: 100%;
+  border: 0;
+  margin-bottom: 2rem;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+#form input:hover {
+  background-color: #D3F8F9;
+  transition: all 1s ease 0s;
+}
+
+#form input:focus {
+  background-color: #D3F8F9;
+  transition: all 1s ease 0s;
+}
+
+#form button {
+  outline: 0;
+  border-radius: 10px;
+  background: #1ADBE5;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#form button:hover, #form button:active, #form button:focus {
+  background-color: #06C5CF;
+  transition: all 1s ease 0s;
+}
+
+#form .message {
+  margin: 15px 0 0;
+  color: #B3B3B3;
+  font-size: 0.7rem;
+}
+
+#form .message a {
+  color: #06C5CF;
+  text-decoration: none;
+}
+
+#form .message a:hover {
+  color: #07b2bb;
+}
